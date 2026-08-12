@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+
+# Node / 前端构建
+node_modules/
+dist/
+build/
+
+# 数据库 / 数据
+*.db
+*.sqlite
+*.sqlite3
+data/
+*.binlog
+*.ibd
+*.ibdata*
+
+# 密钥与凭证（防呆）
+*.pem
+*.key
+id_rsa
+id_ed25519
+*.p12
+
+# Terraform / 云
+.terraform/
+*.tfstate
+*.tfstate.*
+.aws/

@@ -1,0 +1,4 @@
+2026-08-04 10:00:01 INFO service started
+2026-08-04 10:00:02 INFO connected db
+2026-08-04 10:00:05 WARN slow query 2.1s
+2026-08-04 10:00:07 ERROR timeout on request

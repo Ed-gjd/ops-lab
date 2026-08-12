@@ -1,0 +1,147 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20260801165304
+用户名: LAPTOP-XXXX\pc
+RunAs 用户: LAPTOP-XXXX\pc
+配置名称: 
+计算机: LAPTOP-XXXX (Microsoft Windows NT 10.0.26200.0)
+主机应用程序: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File C:\Users\<USER>\cc\setup-ssh-server.ps1
+进程 ID: 14172
+PSVersion: 5.1.26100.8875
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8875
+BuildVersion: 10.0.26100.8875
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+已启动脚本，输出文件为 C:\Users\<USER>\cc\sshd-setup.log
+cap-state: OpenSSH.Server~~~~0.0.1.0 = NotPresent
+installing OpenSSH.Server ...
+
+
+Path          :
+Online        : True
+RestartNeeded : False
+
+install done
+sshd service: Running
+--- GatewayPorts in sshd_config ---
+
+IgnoreCase : True
+LineNumber : 59
+Line       : GatewayPorts yes
+Filename   : sshd_config
+Path       : C:\ProgramData\ssh\sshd_config
+Pattern    : GatewayPorts
+Context    :
+Matches    : {0}
+
+
+Caption                       :
+Description                   :
+ElementName                   : OpenSSH Server (22)
+InstanceID                    : sshd-22
+CommonName                    :
+PolicyKeywords                :
+Enabled                       : True
+PolicyDecisionStrategy        : 2
+PolicyRoles                   :
+ConditionListType             : 3
+CreationClassName             : MSFT|FW|FirewallRule|sshd-22
+ExecutionStrategy             : 2
+Mandatory                     :
+PolicyRuleName                :
+Priority                      :
+RuleUsage                     :
+SequencedActions              : 3
+SystemCreationClassName       :
+SystemName                    :
+Action                        : Allow
+Direction                     : Inbound
+DisplayGroup                  :
+DisplayName                   : OpenSSH Server (22)
+EdgeTraversalPolicy           : Block
+EnforcementStatus             : NotApplicable
+LocalOnlyMapping              : False
+LooseSourceMapping            : False
+Owner                         :
+PackageFamilyName             :
+Platforms                     : {}
+PolicyAppId                   :
+PolicyStoreSource             : PersistentStore
+PolicyStoreSourceType         : Local
+PrimaryStatus                 : OK
+Profiles                      : 0
+RemoteDynamicKeywordAddresses : {}
+RuleGroup                     :
+Status                        : 已从存储区成功分析规则。 (65536)
+StatusCode                    : 65536
+PSComputerName                :
+Name                          : sshd-22
+ID                            : sshd-22
+Group                         :
+Profile                       : Any
+Platform                      : {}
+LSM                           : False
+
+
+Caption                       :
+Description                   :
+ElementName                   : OpenSSH tunnel (8080)
+InstanceID                    : sshd-8080
+CommonName                    :
+PolicyKeywords                :
+Enabled                       : True
+PolicyDecisionStrategy        : 2
+PolicyRoles                   :
+ConditionListType             : 3
+CreationClassName             : MSFT|FW|FirewallRule|sshd-8080
+ExecutionStrategy             : 2
+Mandatory                     :
+PolicyRuleName                :
+Priority                      :
+RuleUsage                     :
+SequencedActions              : 3
+SystemCreationClassName       :
+SystemName                    :
+Action                        : Allow
+Direction                     : Inbound
+DisplayGroup                  :
+DisplayName                   : OpenSSH tunnel (8080)
+EdgeTraversalPolicy           : Block
+EnforcementStatus             : NotApplicable
+LocalOnlyMapping              : False
+LooseSourceMapping            : False
+Owner                         :
+PackageFamilyName             :
+Platforms                     : {}
+PolicyAppId                   :
+PolicyStoreSource             : PersistentStore
+PolicyStoreSourceType         : Local
+PrimaryStatus                 : OK
+Profiles                      : 0
+RemoteDynamicKeywordAddresses : {}
+RuleGroup                     :
+Status                        : 已从存储区成功分析规则。 (65536)
+StatusCode                    : 65536
+PSComputerName                :
+Name                          : sshd-8080
+ID                            : sshd-8080
+Group                         :
+Profile                       : Any
+Platform                      : {}
+LSM                           : False
+
+firewall rules: done
+sshd after restart: Running
+ALL_DONE
+
+
+PS>$global:?
+True
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20260801165625
+**********************

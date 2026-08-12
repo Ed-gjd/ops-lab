@@ -1,0 +1,18 @@
+# 阶段7-4：Promtail 配置 —— 尾部采集 ~/grafana/*.log 推给 Loki
+server:
+  http_listen_port: 9081
+  grpc_listen_port: 0
+
+positions:
+  filename: /tmp/promtail-positions.yaml
+
+clients:
+  - url: http://localhost:3100/loki/api/v1/push
+
+scrape_configs:
+  - job_name: demo
+    static_configs:
+      - targets: [localhost]
+        labels:
+          job: demo
+          __path__: ~/grafana/*.log

@@ -1,0 +1,6 @@
+2026-08-05T07:38:09Z INFO backup taken shop_backup.sql
+2026-08-05T07:40:29Z ERROR master mariadb down on 3306
+2026-08-05T07:40:30Z INFO failover promoted slave 3307 in 1s
+2026-08-05T07:44:00Z ERROR backend B killed, failover to A
+2026-08-05T07:45:00Z WARN loki install apt name collision resolved
+2026-08-05T07:46:00Z INFO PITR recovered 2 rows from binlog replay
